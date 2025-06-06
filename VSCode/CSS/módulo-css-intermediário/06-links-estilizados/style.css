@@ -1,0 +1,23 @@
+html {
+    background-color: gainsboro;
+}
+
+a {
+    cursor: progress;
+    margin: 20px;
+    padding: 10px;
+    border: solid 3px beige;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    background-color: blueviolet;
+
+}

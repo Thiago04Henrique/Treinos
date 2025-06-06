@@ -1,0 +1,19 @@
+html {
+    background-image:url(./legos.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    width: 500px;
+    background-color:oldlace;
+    margin: auto;
+    padding: 50px;
+    border: 20px solid silver;
+
+}
+
+

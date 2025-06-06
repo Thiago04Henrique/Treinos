@@ -1,0 +1,35 @@
+p {
+    color: lightgray;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bg {
+    background-color: lightsalmon;
+    background-image: url(./image/cachorro.jpg);
+}
+
+.bg-image {
+    width: 943px;
+    height: 622px;
+}
+
+.bg-repeat {
+    background-repeat: no-repeat;
+    height: 922px;
+}
+
+.bg-size-cover {
+    background-size: cover;
+    height: 922px;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+    height: 922px;
+}
+
+.bg-position{
+    background: #000 url(./image/cachorro.jpg) repeat-y right top;
+    height: 922px;
+}

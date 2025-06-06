@@ -1,0 +1,56 @@
+/* Exemplo */
+
+/* seletor:pseudo-classe{
+    propriedade: valor;
+} */
+
+/* ----------------------------------------- */
+
+/* First & Last Child */
+
+/* p:first-child{
+    color: goldenrod;
+}
+
+p:last-child{
+    color: greenyellow;
+}
+
+p:not(.padrao){
+    color: rebeccapurple;
+} */
+
+/* ----------------------------------------- */
+
+/* NTH Childs */
+
+/* p:nth-child(odd){
+    color: red;
+        OU
+p:nth-child(even){
+    color: red;
+} */
+
+/* li:nth-child(2n){
+    color: blue;
+} */
+
+/* li:nth-child(4){
+    color: blue;
+} */
+
+/* li:nth-child(n+2):nth-child(-n+5){
+    color:green;
+} */
+
+/* li:nth-last-child(1){
+    color:plum;
+} */
+
+/* ----------------------------------------- */
+
+/* Only Child */
+
+/* p:only-child{
+    color: crimson;
+} */

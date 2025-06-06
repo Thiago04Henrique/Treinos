@@ -1,0 +1,60 @@
+h1 {
+    color: green;
+}
+
+.paragrafo {
+    color: blueviolet;
+}
+
+.trecho {
+    color: red;
+}
+
+#menu {
+    margin-left: 200px;
+}
+
+* {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo.laranja {
+    color: orange;
+}
+
+.titulo.vermelho {
+    color: red;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+p,
+span {
+    font-size: 10px;
+}
+
+.sobre .texto {
+    color: burlywood;
+}
+
+div>p {
+    color: yellowgreen;
+}
+
+div+p {
+    color: royalblue;
+}
+
+a[target=_blank] {
+    color: red;
+    font-size: 20px;
+}
+
+a[href="google.com"] {
+    color: green;
+    font-size: 20px;
+}

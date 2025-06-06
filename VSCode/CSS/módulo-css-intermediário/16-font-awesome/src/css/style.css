@@ -1,0 +1,8 @@
+.fa-facebook {
+    color: lightgray;
+    font-size: 40px;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}

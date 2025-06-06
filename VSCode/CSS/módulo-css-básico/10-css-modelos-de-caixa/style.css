@@ -1,0 +1,14 @@
+*{
+    margin: 10px;
+    
+}
+
+
+p{
+    font-size: 25px; 
+    margin: 30px;
+    padding: 20px;
+    border: 10px blueviolet dashed;
+    background-color: greenyellow;   
+    font-family: 'Lucida Sans';
+}
