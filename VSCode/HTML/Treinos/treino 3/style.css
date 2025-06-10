@@ -1,0 +1,25 @@
+body{
+    background-color: #F5F5F5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    margin: 40px;
+    padding: 20px;     
+}
+
+.primeiro_paragrafo{
+    background-color:#F5F5F5;
+    font-size: 20px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.segundo_paragrafo {
+    background-color: #f0cce2;
+    font-size: 20px;
+    margin: 40px;
+    padding: 20px;
+    color:blueviolet
+}

@@ -1,0 +1,55 @@
+/* Exemplo */
+
+/* seletor::pseudo-elemento{
+    propriedade: valor;
+} */
+
+/* ---------------------------------- */
+
+/* First Letter */
+
+p::first-letter {
+    color: red;
+}
+
+.paragrafo::first-letter {
+    color: green;
+}
+
+#paragrafo::first-letter {
+    color: blue;
+}
+
+/* ------------------------------------- */
+
+/* First Line */
+
+p::first-line {
+    color: yellow;
+}
+
+/* --------------------------------------------- */
+
+/* Marker */
+
+li::marker {
+    color: orangered;
+    font-size: 25px;
+}
+
+/* --------------------------------------------- */
+
+/* Before & After*/
+
+.BEFORE::before {
+    content: "";
+    background: url(ghost.png);
+    display: inline-block;
+    width: 206px;
+    height: 255px;
+
+}
+
+.AFTER::after {
+    content: url(ghost.png);
+}

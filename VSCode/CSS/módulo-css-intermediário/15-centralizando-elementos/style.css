@@ -1,0 +1,55 @@
+body {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: darkgray;
+}
+
+.container {
+    background-color: powderblue;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: palevioletred;
+}
+
+/* ---- Estilos Gerais ---- */
+
+.texto-centralizado-01 {
+    width: 250px;
+    height: 250px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 250px;
+}
+
+
+.texto-centralizado-02 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alinhado-margin-auto {
+    margin: auto;
+    display: block;
+}
+
+.alinhado-absolute {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container-text-align {
+    text-align: center;
+}

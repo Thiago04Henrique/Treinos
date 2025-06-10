@@ -1,0 +1,24 @@
+.produto {
+    background-color: aqua;
+}
+
+.promoção {
+    color: greenyellow;
+    font-size: 30px;
+}
+
+.destaques {
+    color: orange;
+    font-size: 25px;
+}
+
+
+.teste {
+    background-color: coral;
+}
+
+.teste span {
+    background-color: gray;
+    color: aliceblue;
+    font-size: 26px;
+}

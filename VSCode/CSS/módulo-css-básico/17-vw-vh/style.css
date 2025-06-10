@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    width: 300px;
+
+.primeira-sessao {
+    width: 100vw;
+    background-color: aqua;
+}
+
+.segunda-sessao {
+    width: 200vh;
+    background-color: red;
+}
+}
