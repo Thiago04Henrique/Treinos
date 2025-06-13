@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.container,
+.container1 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.container div,
+.container1 div {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
