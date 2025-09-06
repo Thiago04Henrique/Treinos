@@ -1,0 +1,24 @@
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align {
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.self {
+    display: flex;
+    align-items: center;
+}
+
+.self-start {
+    align-self: flex-start;
+}
