@@ -1,99 +1,124 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif; /* Conforme Figma */
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f1ffed;
 }
 
-.header {
-    background-color: #fff;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
 }
 
-/* Logo */
-.logo img {
-    height: 40px; /* Ajuste conforme necessário */
-}
-
-/* Menu de Links */
-.menu ul {
+.logo-container {
     display: flex;
-    list-style: none;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px; /* Conforme Figma */
-    padding: 10px 15px;
-    transition: 0.3s;
-    display: block;
+.logo-texto {
+    font-weight: 700;
+    font-size: 35px;
+    color: #000;
+    letter-spacing: -1px;
 }
 
-/* Efeito de Hover e Seção Ativa */
-.menu ul li a:hover, 
-.menu ul li a.active {
-    background-color: #62c344; /* Verde do Figma */
-    color: #fff;
-    border-radius: 4px;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-/* Botão Cadastre-se */
-.btn-cadastro {
-    background-color: #62c344;
-    color: #fff;
-    text-decoration: none;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: gray;
+    font-size: 18px;
     padding: 10px 25px;
-    border-radius: 8px;
-    font-size: 15px;
+    border-radius: 0px;
     transition: 0.3s;
 }
 
-.btn-cadastro:hover {
-    background-color: #4ea835;
+nav ul li a:hover {
+    background-color: #62c344;
+    color: #f1ffed;
 }
 
-/* Responsividade - Mobile */
+.btn-cadastre-se {
+    color: #394934;
+    border: 2px solid #62c344;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-cadastre-se:hover {
+    background-color: #62c344;
+    color: #f1ffed;
+    cursor: pointer;
+}
+
+.btn-cadastre-se:active {
+    transform: scale(0.90);
+}
+
 @media (max-width: 768px) {
-    .header {
+    .logo-texto {
+        font-size: 45px;
+    }
+
+    nav ul {
+        display: flex;
         flex-direction: column;
-        padding: 30px;
+        width: 100%;
+        gap: 45px;
     }
 
-    .menu {
-        margin: 30px 0;
-        width: 100%;
+    nav ul li a {
+        display: inline-block;
+        font-size: 24px;
+        padding: 10px 30px;
+        width: 75%;
+        margin: 0 auto;
     }
 
-    .menu ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .menu ul li {
-        width: 100%;
+    .btn-cadastre-se {
+        font-size: 24px;
+        width: 75%;
         text-align: center;
     }
 
-    .menu ul li a {
-        font-size: 24px; /* Ajustado para visual mobile */
-        padding: 15px;
+    header {
+        flex-direction: column;
+        gap: 30px;
     }
 
-    .actions {
+    nav {
+        flex-direction: column;
         width: 100%;
-        display: flex;
-        justify-content: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
     }
 }
