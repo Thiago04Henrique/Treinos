@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif; /* Conforme Figma */
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo img {
+    height: 40px; /* Ajuste conforme necessário */
+}
+
+/* Menu de Links */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px; /* Conforme Figma */
+    padding: 10px 15px;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Efeito de Hover e Seção Ativa */
+.menu ul li a:hover, 
+.menu ul li a.active {
+    background-color: #62c344; /* Verde do Figma */
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Botão Cadastre-se */
+.btn-cadastro {
+    background-color: #62c344;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-cadastro:hover {
+    background-color: #4ea835;
+}
+
+/* Responsividade - Mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .menu {
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        font-size: 24px; /* Ajustado para visual mobile */
+        padding: 15px;
+    }
+
+    .actions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
