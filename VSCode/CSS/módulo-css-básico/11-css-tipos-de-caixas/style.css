@@ -1,0 +1,18 @@
+h1{
+    font-size: 45px;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    color: burlywood;
+    background-color: maroon;
+
+    display: block;
+    height: 50px;
+    width: 100px;
+}
+

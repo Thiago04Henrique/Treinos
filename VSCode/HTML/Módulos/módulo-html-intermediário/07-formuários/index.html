@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+
+    <h3>Formulário com METHOD="GET"</h3>
+    <form action="index.html" method="get">
+        <input type="text" name="q" id="busca">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário com METHOD="POST"</h3>
+    <form action="index.html" method="post">
+        <input type="text" name="q" id="busca">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Formulário de login do Facebook</h3>
+    <form action="index.html" method="get" enctype="multipart/form-data">
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+        <br>
+
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou Email" required>
+        <input type="password" name="senha" id="senha" placeholder="Senha" required>
+
+
+        <br><br>
+
+        <label><strong>Data de Nascimento</strong></label>
+
+        <br>
+
+        <select name="dia">
+            <option value="01">01</option>
+            <option value="02" selected>02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+        </select>
+
+        <select name="mês">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10" selected>10</option>
+        </select>
+
+        <select name="ano">
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004" selected>2004</option>
+        </select>
+
+        <br><br>
+
+        <label><strong>Gênero</strong></label>
+
+        <br>
+
+        <label for="Feminino">Feminino</label>
+        <input type="radio" name="gênero" id="Feminino" value="Feminino">
+
+        <br>
+
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="gênero" id="Masculino" value="Masculino">
+
+        <br>
+
+        <label for="Personalizado">Personalizado</label>
+        <input type="radio" name="gênero" id="Personalizado" value="Personalizado">
+
+        <br><br>
+
+        <label for="foto-de-perfil"><strong>Enviar foto de perfil</strong></label>
+        <br>
+        <input type="file" id="foto-de-perfil" value="foto-de-perfil">
+
+        <br><br><br>
+
+        <input type="submit" value="Cadastre-se" onclick="alert('Cadastro Concluído!')">
+
+    </form>
+
+</body>
+
+</html>

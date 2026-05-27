@@ -1,0 +1,64 @@
+body{
+    background-color: #ffc222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.cabecalho{
+    padding: 10px 5px;
+    background-color: #ff0020;
+}
+
+.cabecalho .logo {
+    display: inline-block;
+}
+
+.cabecalho nav {
+    float: right
+}
+
+.cabecalho nav li {
+    display: inline-block;
+    padding: 15px;
+}
+
+main {
+    background-color: #1070ff;
+    padding: 20px;
+    /* width: 900px; */
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 900px;
+}
+
+main .info  {
+    font-size: 18px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+a {
+    color: yellow;
+}
+
+.image img {
+    width:100%;
+}
+
+/* Dispositivos extra pequenos (celulares em posição porta retrato, de pé, menores do que 576px) */
+@media (max-width: 576px) {
+    .cabecalho{
+        text-align: center;
+    }
+    .cabecalho nav {
+        float: none;
+    }
+
+    .cabecalho nav li {
+        display: block;
+      }
+
+    }
+

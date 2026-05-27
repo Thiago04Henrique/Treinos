@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+}
+
+/* flex: grow - shrink - basis (sendo o segundo e terceiro valor opcionais (caso não coloque valores das outras unidades, vai afetar apenas o grow e as outras vão para seus valores padrão, sendo 1(shrink) e 0(basis)*/
+
+.flex-0{
+    flex: 0;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex{
+    flex: 0 1 100px;
+}

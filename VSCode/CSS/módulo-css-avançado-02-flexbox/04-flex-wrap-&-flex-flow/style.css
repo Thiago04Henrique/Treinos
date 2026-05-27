@@ -1,0 +1,23 @@
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    /* VALOR PADRÃO */
+    /* flex-direction: column; */
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* flex-direction: column; */
+}
+
+.wrap-flex-flow {
+    display: flex;
+    flex-flow: row wrap;
+}
