@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1b26;
+    color: #a9b1d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.background-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(122, 162, 247, 0.15) 0%, rgba(0,0,0,0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card {
+    background-color: #24283b;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #414868;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: #7aa2f7;
+    transform: translateY(-2px);
+}
+
+.avatar-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    font-size: 55px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.profile-icon.girar {
+    animation: spin-effect 0.6s ease-in-out;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes spin-effect {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+h1 {
+    color: #7aa2f7;
+    font-size: 26px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: #bb9af3;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tech-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-html { background-color: rgba(227, 79, 38, 0.15); color: #e34f26; border: 1px solid rgba(227, 79, 38, 0.3); }
+.badge-css { background-color: rgba(21, 114, 182, 0.15); color: #1572b6; border: 1px solid rgba(21, 114, 182, 0.3); }
+.badge-js { background-color: rgba(247, 223, 30, 0.15); color: #f7df1e; border: 1px solid rgba(247, 223, 30, 0.3); }
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #a9b1d6;
+}
+
+.fam {
+    color: #0F52BA;
+}
+
+.links-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn-link {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-gmail { background-color: rgba(209, 72, 54, 0.1); color: #d14836; border: 1px solid rgba(209, 72, 54, 0.2); }
+.btn-gmail:hover { background-color: #d14836; color: #ffffff; }
+
+.btn-linkedin { background-color: rgba(0, 119, 181, 0.1); color: #0077b5; border: 1px solid rgba(0, 119, 181, 0.2); }
+.btn-linkedin:hover { background-color: #0077b5; color: #ffffff; }
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292e;
+    color: #ffffff;
+    border: 1px solid #444d56;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-github:hover {
+    background-color: #2f363d;
+    transform: translateY(-2px);
+    border-color: #7aa2f7;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-github svg {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.btn-github:active {
+    transform: translateY(1px);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #565f89;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 13px; }
+    .profile-icon { font-size: 45px; }
+    .links-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
